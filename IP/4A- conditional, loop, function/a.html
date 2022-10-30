@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("-----------CONDITIONAL STATEMENT--------------");
+      // Conditional Statement
+      let x = 10;
+      if (x > 5) {
+        console.log("Greater than five");
+      } else if (x == 5) {
+        console.log("Is five");
+      } else {
+        console.log("Less than Five");
+      }
+
+      console.log("-----------SWITCH--------------");
+      // Switch -- not loop
+      const xx = 10;
+      switch (xx) {
+        case 5:
+          console.log("five");
+          break;
+        case 10:
+          console.log("Ten");
+        default:
+          break;
+      }
+
+      console.log("-----------LOOP--------------");
+      // loop for
+      for (let i = 5; i > 0; i--) {
+        console.log(i);
+      }
+      // loop for in
+      const numbers = ['a','s','d','f'];
+      for (variable in numbers) {
+        console.log(variable);
+      }
+      // loop for of
+      for (xxx of numbers) {
+        console.log(xxx);
+      }
+
+      console.log("-----------FUNCTION--------------");
+      // Function
+      function length_r(word) {
+        return word.length;
+      }
+      function lala(word) {
+        console.log("The length of word is: " + length_r(word));
+      }
+      lala("PAPA FRANKU");
+    </script>
+  </body>
+</html>
