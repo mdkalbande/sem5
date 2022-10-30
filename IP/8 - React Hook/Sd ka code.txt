@@ -1,0 +1,12 @@
+import React from "react"
+
+export default function App(){
+  const [val,setVal] = React.useState(0)
+  return(
+    <div>
+      <p>Your counter is : {val}</p>
+      <button onClick={()=>setVal(val+1)}>Increment</button>
+      <button onClick={()=>setVal(val-1)}>Decrement</button>
+    </div>
+  )
+}
