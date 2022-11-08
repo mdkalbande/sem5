@@ -1,0 +1,30 @@
+*File Structure
+  ->src/html/index.html
+  ->Dockerfile
+
+*Inside Dockerfile
+    FROM nginx:1.10.1-alpine
+    COPY src/html /usr/share/nginx/html
+
+*Commands:
+    1. docker build (To build the container)
+        1.1 docker build -t imagename .  (To build image with name)
+
+    2. docker images (To view the builded image)
+
+    3. docker run -d -p 80:80 <Image ID> (To run the container)
+        --> localhost:80 (To view live html)
+
+    4. docker ps (to view the running container)
+
+    5. docker stop <Names> (To stop the container)
+
+    6. docker ps -a (To view the non running container)
+
+    7. docker rm <Names> (To delete/remove the container)
+
+    8. docker images (To view the image)
+
+    9. docker rmi <IMAGE ID> (To remove/delete image)
+
+
